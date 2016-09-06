@@ -73,9 +73,11 @@ public:
 	void sendCommand(byte command);
 	void sendData(byte Data);
 
+        // Bent G Christensen, bentor@gmail.com
 	void printIndicator(byte level, byte X=255, byte Y=255);
 	void printChar(char c, byte X=255, byte Y=255);
 	void printString(const char *String, byte X=255, byte Y=255, byte numChar=255);
+        // Bent G Christensen, bentor@gmail.com
 	void printString(const __FlashStringHelper *String, byte X=255, byte Y=255, byte numChar=255);
 	byte printNumber(long n, byte X=255, byte Y=255);
 	byte printNumber(float float_num, byte prec=6, byte Y=255, byte numChar=255);

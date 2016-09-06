@@ -24,6 +24,8 @@
 #include <avr/pgmspace.h>
 
 
+// Bent G Christensen, bentor@gmail.com
+
 const byte Indicator[][8] PROGMEM = {
 	{0x00,0x00,0x30,0x30,0x30,0x30,0x00,0x00},
 	{0x00,0x00,0x3C,0x3C,0x3C,0x3C,0x00,0x00},
@@ -233,6 +235,7 @@ void OzOLED::sendData(byte data){
 
 }
 
+// Bent G Christensen, bentor@gmail.com
 void OzOLED::printIndicator(byte level, byte X, byte Y){
 
     if ( X < 128 )
@@ -266,6 +269,9 @@ void OzOLED::printChar(char C, byte X, byte Y){
 	 
     }
 }
+
+
+// Bent G Christensen, bentor@gmail.com
 
 void OzOLED::printString(const __FlashStringHelper *String, byte X, byte Y, byte numChar){
 
